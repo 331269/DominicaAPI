@@ -57,12 +57,12 @@ if st.button("Agregar producto"):
     st.session_state.productos_agregados.append(agrear_df)
     st.success("Información agregada")
 
-st.subheader("📝 Escoge la ubicación")
+st.subheader("Escoge la ubicación")
 codigo_ubicacion = st.selectbox(
     "Código de ubicación:", options=list(ubicaciones.keys()))
 st.write(f"Sucursal: {ubicaciones[codigo_ubicacion]}")
 
-if st.button("📩 Enviar"):
+if st.button("Enviar"):
     if st.session_state.productos_agregados:
         output_df = pd.concat(
             st.session_state.productos_agregados, ignore_index=True)
@@ -80,9 +80,9 @@ if st.button("📩 Enviar"):
             index=False
         )
 
-        st.success("✅ Información agregada a Sharepoint")
+        st.success("Información agregada a Sharepoint")
 
         # 🧹 Limpiar la lista después de guardar
         st.session_state.productos_agregados = []
     else:
-        st.warning("⚠️ No has agregado ningún producto todavía.")
+        st.warning("No has agregado ningún producto todavía.")
