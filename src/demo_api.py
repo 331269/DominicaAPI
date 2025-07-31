@@ -12,7 +12,7 @@ seleccionar_subreceta = st.selectbox(
 
 if seleccionar_subreceta in subrecetas:
     st.success(f"Seleccionaste la subreceta: {seleccionar_subreceta}")
-    st.write(f"🔑 Código del producto: `{subrecetas[seleccionar_subreceta]}`")
+    st.write(f"Código del producto: `{subrecetas[seleccionar_subreceta]}`")
 else:
     st.warning("La subreceta escrita no está en la lista.")
 
