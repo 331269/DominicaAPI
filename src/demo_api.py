@@ -4,6 +4,7 @@ from calculadora.calcular_ingredientes import calcular_ingredientes
 import pandas as pd
 import os
 
+st.image("dominica logo demo.jpg")
 
 st.title("Selecciona una Subreceta")
 
