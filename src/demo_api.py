@@ -82,7 +82,7 @@ if st.button("Enviar"):
 
         st.success("Información agregada a Sharepoint")
 
-        # 🧹 Limpiar la lista después de guardar
+        # Limpiar la lista después de guardar
         st.session_state.productos_agregados = []
     else:
         st.warning("No has agregado ningún producto todavía.")
