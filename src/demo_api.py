@@ -58,7 +58,7 @@ if "productos_agregados" not in st.session_state:
     st.session_state.productos_agregados = []
 
 st.title("📦 Registro de Subrecetas - Demo")
-st.image("dominica logo demo.jpg", width=180)
+st.image("dominica_logo_demo.jpg", width=180)
 
 # ---------- Selección de ubicación primero ----------
 
