@@ -58,7 +58,8 @@ if "productos_agregados" not in st.session_state:
     st.session_state.productos_agregados = []
 
 st.title("📦 Registro de Subrecetas - Demo")
-st.image("dominica_logo_demo.jpg", width=180)
+logo_path = os.path.join(os.path.dirname(__file__), "..", "dominica_logo_demo.jpg")
+st.image(logo_path, width=180)
 
 # ---------- Selección de ubicación primero ----------
 
